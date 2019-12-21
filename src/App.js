@@ -4,7 +4,6 @@ import Popup from "reactjs-popup"
 
 const WORDS = ['poulpe', 'dauphin', 'lanterne', 'oreille', 'oiseau', 'livre', 'iphone', 'orange', 'entreprise', 'japon', 'universite']
 const LETTERS = "abcdefghijklmnopqrstuvwxyz"
-const BNN = "BNN"
 
 class App extends Component {
 
