@@ -16,6 +16,7 @@
 }
 
 .letters {
+	position: relative;
 	cursor: default;
 	-webkit-user-select: none; /* Safari */        
 	-moz-user-select: none; /* Firefox */
@@ -24,10 +25,8 @@
 }
 
 button {
-	/*white-space: normal;*/
 	-webkit-appearance: none;
 	border-radius: 10px;
-	/*background-color: lightgrey;*/
 	padding: 5%;
 	background-image: linear-gradient(#e8e8e8 90%, #989898)
 }
@@ -35,4 +34,15 @@ button {
 .alphabet {
 	width: 80%;
 	margin: 0 auto;
+}
+
+.indexUsed {
+	animation-name: fadeALittle;
+	animation-duration: 1s;
+	color: rgba(0, 0, 0, .3);
+}
+
+@keyframes fadeALittle {
+  from   {color:rgba(0, 0, 0, 1);}
+  to  {color:rgba(0, 0, 0, .3);}
 }
