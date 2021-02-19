@@ -1,7 +1,43 @@
 <html>
 <head>
+	<style type="text/css">
+		.frame {
+		    height: 100%; /* Can be anything */
+		    width: 100%; /* Can be anything */
+		    background-color: rgba(215, 219, 215, 1);
+		    position: relative;
+		}
+		img {
+		    max-height: 100%;
+		    max-width: 100%;
+		    width: auto;
+		    height: auto;
+		    position: absolute;
+		    top: 0;
+		    bottom: 0;
+		    left: 0;
+		    right: 0;
+		    margin: auto;
+		}
+	</style>
+
+	<script type="text/javascript">
+		var limagetavu = "lr2.jpeg";
+		//document.getElementsByTagName('img')[0].src = "lr4.jpeg"
+
+		document.addEventListener("DOMContentLoaded", function(){
+    		
+    		var datenow = Date.now()
+    		var datenow4 = datenow % 4 + 1
+    		console.log('jojo ' + datenow + '  .  ' + datenow4)
+    		document.getElementsByTagName('img')[0].src = "lr" + datenow4 + ".jpeg"
+		});
+	</script>
 </head>
 <body>
-	<h1>Bonsoir test</h1>
+	<div class="frame">
+		<img src="lr1.jpeg" style="display: block; margin: auto;">
+	</div>
+	
 </body>
 </html>
