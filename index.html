@@ -1,196 +1,62 @@
 <!DOCTYPE html>
+<html>
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+}
 
-<html lang="fr">
-	<head>
-		<meta charset="UTF-8">
-		<title>La Regionale</title>
-		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-		<meta name="description" content="" />
-		<meta name="keywords" content="" />
-		<!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
-		<script src="js/jquery.min.js"></script>
-		<script src="js/skel.min.js"></script>
-		<script src="js/skel-layers.min.js"></script>
-		<script src="js/init.js"></script>
-		<noscript>
-			<link rel="stylesheet" href="css/skel.css" />
-			<link rel="stylesheet" href="css/style.css" />
-			<link rel="stylesheet" href="css/style-xlarge.css" />
-		</noscript>
-	</head>
-	<body class="landing">
+.bgimg {
+  background-image: url('maksim-shutov-H8vhhepiiaU-unsplash.jpg');
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 25px;
+}
 
-		<!-- Header -->
-			<header id="header">
-				<h1><a href="index.html">La Régionale</a></h1>
-				<nav id="nav">
-					<ul>
-						<li><a href="#">Vous avez une question ?</a></li>
-						<li><a href="#">Vous êtes artisan ?</a></li>
-						<li><a href="#" class="button special">S'inscrire</a></li>
-					</ul>
-				</nav>
-			</header>
+.topleft {
+  position: absolute;
+  top: 0;
+  left: 16px;
+}
 
-		<!-- Banner -->
-			<section id="banner">
-				<h2>Bonjour.</h2>
-				<p>Artisans et consommateur en lien direct avec La Regionale</p>
-				<ul class="actions">
-					<li>
-						<a href="#" class="button big">En savoir plus</a>
-					</li>
-				</ul>
-			</section>
+.bottomleft {
+  position: absolute;
+  bottom: 0;
+  left: 16px;
+}
 
-		<!-- One -->
-			<section id="one" class="wrapper style1 special">
-				<div class="container">
-					<header class="major">
-						<h2>Les nouveautés 😊</h2>
-						<p>À chaque fois qu'une nouvelle étape est passée par La Régionale vous serez tenu au courant ici !</p>
-					</header>
-					<div class="row 150%">
-						<div class="4u 12u$(medium)">
-							<section class="box">
-								<i class="icon big rounded color1 fa-cloud"></i>
-								<h3>Nos serveurs sont plus solides !</h3>
-								<p>Jeudi 24 Juin notre équipe a fait l'aquisition de serveurs dédiés. Concrètement le site devient plus solides. Youhou !</p>
-							</section>
-						</div>
-						<div class="4u 12u$(medium)">
-							<section class="box">
-								<i class="icon big rounded color9 fa-desktop"></i>
-								<h3>Le design du site est modiié</h3>
-								<p>Vous nous avez parlé, on vous a écouté, refonte totale du parcours utilisateur, on éspère que vous allez kiffer :D</p>
-							</section>
-						</div>
-						<div class="4u$ 12u$(medium)">
-							<section class="box">
-								<i class="icon big rounded color6 fa-rocket"></i>
-								<h3>Levé de fond de l'espace</h3>
-								<p>La Regionale vous annonce qu'on vient de lever 3 millions d'euro pour permettre le developpement de la plateforme !! Tous ca rien que pour vous, on va vous mettre bien.</p>
-							</section>
-						</div>
-					</div>
-				</div>
-			</section>
+.middle {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
 
-		<!-- Two -->
-			<section id="two" class="wrapper style2 special">
-				<div class="container">
-					<header class="major">
-						<h2>Vous voulez nous connaître un peu plus ?</h2>
-						<p>Ci dessous la liste de nous ;) </p>
-					</header>
-					<section class="profiles">
-						<div class="row">
-							<section class="3u 6u(medium) 12u$(xsmall) profile">
-								<img src="images/profile_placeholder.gif" alt="" />
-								<h4>Morgane</h4>
-								<p>Dite Momo la grosse</p>
-							</section>
-							<section class="3u 6u$(medium) 12u$(xsmall) profile">
-								<img src="images/profile_placeholder.gif" alt="" />
-								<h4>Zouhair</h4>
-								<p>Dit Zou le gros</p>
-							</section>
-							<section class="3u 6u(medium) 12u$(xsmall) profile">
-								<img src="images/profile_placeholder.gif" alt="" />
-								<h4>Caroline</h4>
-								<p>Dite Caro la grosse</p>
-							</section>
-							<section class="3u$ 6u$(medium) 12u$(xsmall) profile">
-								<img src="images/profile_placeholder.gif" alt="" />
-								<h4>Alexandre</h4>
-								<p>Dit Alex le gros</p>
-							</section>
-						</div>
-					</section>
-					<footer>
-						<p>Il est sympa ce petit encadré, quest ce qu'on pourrait bien raconter ici... Ba tiens a vous de nous dire ce que vous pensez de nous ! </p>
-						<ul class="actions">
-							<li>
-								<a href="#" class="button big">Un commentaire ?</a>
-							</li>
-						</ul>
-					</footer>
-				</div>
-			</section>
+hr {
+  margin: auto;
+  width: 40%;
+}
+</style>
+<body>
 
-		<!-- Three -->
-			<section id="three" class="wrapper style3 special">
-				<div class="container">
-					<header class="major">
-						<h2>Si vous voulez nous contacter c'est ici</h2>
-						<p>On vous réponds dans la journée ! (enfin sauf si c'est un jour pair, ou un jour multiple de 3 ou de 5)</p>
-					</header>
-				</div>
-				<div class="container 50%">
-					<form action="#" method="post">
-						<div class="row uniform">
-							<div class="6u 12u$(small)">
-								<input name="name" id="name" value="" placeholder="Name" type="text">
-							</div>
-							<div class="6u$ 12u$(small)">
-								<input name="email" id="email" value="" placeholder="Email" type="email">
-							</div>
-							<div class="12u$">
-								<textarea name="message" id="message" placeholder="Message" rows="6"></textarea>
-							</div>
-							<div class="12u$">
-								<ul class="actions">
-									<li><input value="Send Message" class="special big" type="submit"></li>
-								</ul>
-							</div>
-						</div>
-					</form>
-				</div>
-			</section>
+<div class="bgimg">
+  <div class="topleft">
+    <!-- <p>Logo</p> -->
+  </div>
+  <div class="middle">
+    <h1>COMING SOON</h1>
+    <!-- <hr> -->
+    <!-- <p>35 days left</p> -->
+  </div>
+  <!-- <div class="bottomleft">
+    <p>Some text</p>
+  </div> -->
+</div>
 
-		<!-- Footer -->
-			<footer id="footer">
-				<div class="container">
-					<section class="links">
-						<div class="row">
-							<section class="3u 6u(medium) 12u$(small)">
-								<h3>Pour les CGU et les trucs dans legenre c'est ici</h3>
-								<ul class="unstyled">
-									<li><a href="#">GCU</a></li>
-									<li><a href="#">charte</a></li>
-									<li><a href="#">nous contacter</a></li>
-									<li><a href="#">Les musiques qu'on aime</a></li>
-									<li><a href="#">Notre projet</a></li>
-								</ul>
-							</section>
-						</div>
-					</section>
-					<div class="row">
-						<div class="8u 12u$(medium)">
-							<ul class="copyright">
-								<li>&copy; La Regionale. All rights reserved.</li>
-								
-							</ul>
-						</div>
-						<div class="4u$ 12u$(medium)">
-							<ul class="icons">
-								<li>
-									<a class="icon rounded fa-facebook"><span class="label">Facebook</span></a>
-								</li>
-								<li>
-									<a class="icon rounded fa-twitter"><span class="label">Twitter</span></a>
-								</li>
-								<li>
-									<a class="icon rounded fa-google-plus"><span class="label">Google+</span></a>
-								</li>
-								<li>
-									<a class="icon rounded fa-linkedin"><span class="label">LinkedIn</span></a>
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</footer>
-
-	</body>
+</body>
 </html>
